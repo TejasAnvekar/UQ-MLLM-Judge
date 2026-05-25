@@ -1,0 +1,148 @@
+{
+  "cal_path": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ/slurm_52762797_20260320_051020_google_gemma-3-4b-it/Figures/UQ/20260320_052418/batch/cal_predictions.json",
+  "test_path": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ/slurm_52762797_20260320_051020_google_gemma-3-4b-it/Figures/UQ/20260320_052418/batch/test_predictions.json",
+  "alphas": [
+    0.01,
+    0.05,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "task_type": "batch",
+  "top_k_score": 5,
+  "top_k_pair": 3,
+  "task_summary": {
+    "task_type": "batch",
+    "cal_n": 439,
+    "test_n": 1030,
+    "uq_metrics": {
+      "n": 1030,
+      "exact_accuracy": 0.11941747572815534,
+      "pairwise_agreement_mean": 0.5715210355987055,
+      "kendall_tau_like_mean": 0.143042071197411,
+      "sequence_logprob_mean": -0.16178413156919397,
+      "sequence_confidence_mean": 0.3006545066662213,
+      "auroc_uncertainty_for_incorrect": 0.6135074085029716,
+      "ece": 0.18123703093806598,
+      "mce": 0.852931348208638,
+      "risk_coverage": {
+        "coverage": [
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.39999999999999997,
+          0.44999999999999996,
+          0.49999999999999994,
+          0.5499999999999999,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.7999999999999999,
+          0.85,
+          0.9,
+          0.95,
+          1.0
+        ],
+        "risk": [
+          0.8846153846153846,
+          0.7961165048543689,
+          0.7402597402597403,
+          0.7669902912621359,
+          0.813953488372093,
+          0.8446601941747574,
+          0.8666666666666667,
+          0.883495145631068,
+          0.8920086393088553,
+          0.9029126213592233,
+          0.9081272084805654,
+          0.9077669902912622,
+          0.908955223880597,
+          0.9056865464632455,
+          0.9093264248704663,
+          0.8932038834951457,
+          0.8858447488584476,
+          0.8759439050701187,
+          0.8752556237218814,
+          0.8805825242718447
+        ],
+        "sizes": [
+          52,
+          103,
+          154,
+          206,
+          258,
+          309,
+          360,
+          412,
+          463,
+          515,
+          566,
+          618,
+          670,
+          721,
+          772,
+          824,
+          876,
+          927,
+          978,
+          1030
+        ]
+      },
+      "paths": {
+        "reliability": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/google_gemma-3-4b-it/batch/batch_reliability.png",
+        "risk_coverage": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/google_gemma-3-4b-it/batch/batch_risk_coverage.png"
+      }
+    },
+    "conformal": null,
+    "selection": {
+      "cal_n": 439,
+      "test_n": 1030,
+      "alphas": [
+        0.01,
+        0.05,
+        0.1,
+        0.15,
+        0.2
+      ],
+      "nominal_coverages": [
+        0.99,
+        0.95,
+        0.9,
+        0.85,
+        0.8
+      ],
+      "empirical_coverages": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "avg_kept_accuracy": [
+        0.11941747572815534,
+        0.11941747572815534,
+        0.11941747572815534,
+        0.11941747572815534,
+        0.11941747572815534
+      ],
+      "threshold_by_alpha": {
+        "0.01": 0.25,
+        "0.05": 0.25,
+        "0.1": 0.25,
+        "0.15": 0.25,
+        "0.2": 0.25
+      },
+      "paths": {
+        "coverage_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/google_gemma-3-4b-it/batch/batch_selection_coverage.png"
+      }
+    },
+    "paths": {
+      "bias_summary": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/google_gemma-3-4b-it/batch/bias_summary.json"
+    }
+  }
+}

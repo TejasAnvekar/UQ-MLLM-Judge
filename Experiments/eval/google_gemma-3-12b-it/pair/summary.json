@@ -1,0 +1,184 @@
+{
+  "task_type": "pair",
+  "cal_n": 386,
+  "test_n": 907,
+  "uq_metrics": {
+    "n": 907,
+    "n_valid_for_class_metrics": 907,
+    "n_unknown_true_labels": 0,
+    "accuracy": 0.5512679162072768,
+    "nll": 3.883694171475537,
+    "brier": 0.8652740155798874,
+    "entropy_mean": 0.055105391055701544,
+    "auroc_uncertainty_for_incorrect": 0.5647764127764128,
+    "ece": 0.5480752431068601,
+    "mce": 0.6791343608359957,
+    "risk_coverage": {
+      "coverage": [
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35,
+        0.39999999999999997,
+        0.44999999999999996,
+        0.49999999999999994,
+        0.5499999999999999,
+        0.6,
+        0.65,
+        0.7,
+        0.75,
+        0.7999999999999999,
+        0.85,
+        0.9,
+        0.95,
+        1.0
+      ],
+      "risk": [
+        0.4222222222222223,
+        0.5054945054945055,
+        0.42647058823529416,
+        0.419889502762431,
+        0.4008810572687225,
+        0.40441176470588236,
+        0.4006309148264984,
+        0.41597796143250687,
+        0.4142156862745098,
+        0.42604856512141276,
+        0.4288577154308617,
+        0.4283088235294118,
+        0.42711864406779665,
+        0.4330708661417323,
+        0.4411764705882353,
+        0.4421487603305785,
+        0.437094682230869,
+        0.4375,
+        0.4489559164733179,
+        0.4487320837927232
+      ],
+      "sizes": [
+        45,
+        91,
+        136,
+        181,
+        227,
+        272,
+        317,
+        363,
+        408,
+        453,
+        499,
+        544,
+        590,
+        635,
+        680,
+        726,
+        771,
+        816,
+        862,
+        907
+      ]
+    },
+    "paths": {
+      "reliability": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/google_gemma-3-12b-it/pair/pair_reliability.png",
+      "risk_coverage": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/google_gemma-3-12b-it/pair/pair_risk_coverage.png"
+    }
+  },
+  "conformal": {
+    "cal_n": 386,
+    "test_n": 907,
+    "alphas": [
+      0.01,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "nominal_coverages": [
+      0.99,
+      0.95,
+      0.9,
+      0.85,
+      0.8
+    ],
+    "empirical_coverages": [
+      0.9922822491730982,
+      0.9547960308710033,
+      0.9117971334068358,
+      0.8853362734288864,
+      0.8434399117971334
+    ],
+    "avg_set_sizes": [
+      2.9492833517089307,
+      2.7585446527012127,
+      2.5534729878721056,
+      2.429988974641676,
+      2.223814773980154
+    ],
+    "coverage_by_alpha": {
+      "0.01": 0.9922822491730982,
+      "0.05": 0.9547960308710033,
+      "0.1": 0.9117971334068358,
+      "0.15": 0.8853362734288864,
+      "0.2": 0.8434399117971334
+    },
+    "set_size_by_alpha": {
+      "0.01": 2.9492833517089307,
+      "0.05": 2.7585446527012127,
+      "0.1": 2.5534729878721056,
+      "0.15": 2.429988974641676,
+      "0.2": 2.223814773980154
+    },
+    "paths": {
+      "coverage_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/google_gemma-3-12b-it/pair/pair_conformal_coverage.png",
+      "set_size_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/google_gemma-3-12b-it/pair/pair_conformal_set_size.png"
+    }
+  },
+  "selection": {
+    "cal_n": 386,
+    "test_n": 907,
+    "alphas": [
+      0.01,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "nominal_coverages": [
+      0.99,
+      0.95,
+      0.9,
+      0.85,
+      0.8
+    ],
+    "empirical_coverages": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "avg_kept_accuracy": [
+      0.5512679162072768,
+      0.5512679162072768,
+      0.5512679162072768,
+      0.5512679162072768,
+      0.5512679162072768
+    ],
+    "threshold_by_alpha": {
+      "0.01": 0.0,
+      "0.05": 0.0,
+      "0.1": 0.0,
+      "0.15": 0.0,
+      "0.2": 0.0
+    },
+    "paths": {
+      "coverage_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/google_gemma-3-12b-it/pair/pair_selection_coverage.png"
+    }
+  },
+  "paths": {
+    "bias_summary": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/google_gemma-3-12b-it/pair/bias_summary.json"
+  }
+}

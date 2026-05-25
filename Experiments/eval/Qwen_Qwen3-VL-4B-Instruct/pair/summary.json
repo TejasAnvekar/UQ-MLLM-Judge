@@ -1,0 +1,184 @@
+{
+  "task_type": "pair",
+  "cal_n": 386,
+  "test_n": 907,
+  "uq_metrics": {
+    "n": 907,
+    "n_valid_for_class_metrics": 907,
+    "n_unknown_true_labels": 0,
+    "accuracy": 0.49834619625137816,
+    "nll": 2.5970402318655275,
+    "brier": 0.8565727102797888,
+    "entropy_mean": 0.2491659660052558,
+    "auroc_uncertainty_for_incorrect": 0.6395409899834679,
+    "ece": 0.4997662959114733,
+    "mce": 0.8361628695384653,
+    "risk_coverage": {
+      "coverage": [
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35,
+        0.39999999999999997,
+        0.44999999999999996,
+        0.49999999999999994,
+        0.5499999999999999,
+        0.6,
+        0.65,
+        0.7,
+        0.75,
+        0.7999999999999999,
+        0.85,
+        0.9,
+        0.95,
+        1.0
+      ],
+      "risk": [
+        0.5555555555555556,
+        0.4285714285714286,
+        0.4117647058823529,
+        0.3867403314917127,
+        0.4008810572687225,
+        0.3970588235294118,
+        0.4069400630914827,
+        0.4049586776859504,
+        0.4117647058823529,
+        0.42163355408388525,
+        0.4128256513026052,
+        0.4227941176470589,
+        0.43559322033898307,
+        0.447244094488189,
+        0.44999999999999996,
+        0.4573002754820936,
+        0.46433203631647213,
+        0.47058823529411764,
+        0.47911832946635735,
+        0.5016538037486218
+      ],
+      "sizes": [
+        45,
+        91,
+        136,
+        181,
+        227,
+        272,
+        317,
+        363,
+        408,
+        453,
+        499,
+        544,
+        590,
+        635,
+        680,
+        726,
+        771,
+        816,
+        862,
+        907
+      ]
+    },
+    "paths": {
+      "reliability": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/Qwen_Qwen3-VL-4B-Instruct/pair/pair_reliability.png",
+      "risk_coverage": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/Qwen_Qwen3-VL-4B-Instruct/pair/pair_risk_coverage.png"
+    }
+  },
+  "conformal": {
+    "cal_n": 386,
+    "test_n": 907,
+    "alphas": [
+      0.01,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "nominal_coverages": [
+      0.99,
+      0.95,
+      0.9,
+      0.85,
+      0.8
+    ],
+    "empirical_coverages": [
+      0.9900771775082691,
+      0.9658213891951488,
+      0.9239250275633958,
+      0.896361631753032,
+      0.8478500551267916
+    ],
+    "avg_set_sizes": [
+      2.9492833517089307,
+      2.7563395810363835,
+      2.538037486218302,
+      2.414553472987872,
+      2.2205071664829106
+    ],
+    "coverage_by_alpha": {
+      "0.01": 0.9900771775082691,
+      "0.05": 0.9658213891951488,
+      "0.1": 0.9239250275633958,
+      "0.15": 0.896361631753032,
+      "0.2": 0.8478500551267916
+    },
+    "set_size_by_alpha": {
+      "0.01": 2.9492833517089307,
+      "0.05": 2.7563395810363835,
+      "0.1": 2.538037486218302,
+      "0.15": 2.414553472987872,
+      "0.2": 2.2205071664829106
+    },
+    "paths": {
+      "coverage_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/Qwen_Qwen3-VL-4B-Instruct/pair/pair_conformal_coverage.png",
+      "set_size_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/Qwen_Qwen3-VL-4B-Instruct/pair/pair_conformal_set_size.png"
+    }
+  },
+  "selection": {
+    "cal_n": 386,
+    "test_n": 907,
+    "alphas": [
+      0.01,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "nominal_coverages": [
+      0.99,
+      0.95,
+      0.9,
+      0.85,
+      0.8
+    ],
+    "empirical_coverages": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "avg_kept_accuracy": [
+      0.49834619625137816,
+      0.49834619625137816,
+      0.49834619625137816,
+      0.49834619625137816,
+      0.49834619625137816
+    ],
+    "threshold_by_alpha": {
+      "0.01": 0.0,
+      "0.05": 0.0,
+      "0.1": 0.0,
+      "0.15": 0.0,
+      "0.2": 0.0
+    },
+    "paths": {
+      "coverage_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/Qwen_Qwen3-VL-4B-Instruct/pair/pair_selection_coverage.png"
+    }
+  },
+  "paths": {
+    "bias_summary": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/Qwen_Qwen3-VL-4B-Instruct/pair/bias_summary.json"
+  }
+}

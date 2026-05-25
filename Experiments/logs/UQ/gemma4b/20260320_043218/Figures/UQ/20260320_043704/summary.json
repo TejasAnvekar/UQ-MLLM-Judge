@@ -1,0 +1,361 @@
+{
+  "run_id": "20260320_043704",
+  "dataset_path": "/gscratch/tkishore/MLLM-Judge/Dataset/Benchmark_Lite/pair_lite.jsonl",
+  "image_root": "/gscratch/tkishore/MLLM-Judge/Dataset/image",
+  "model": "google/gemma-3-4b-it",
+  "api_base_url": "http://127.0.0.1:8000/v1",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "top_logprobs": 20,
+  "timeout_s": 180,
+  "batch_size": 256,
+  "concurrency": 128,
+  "retry_attempts": 3,
+  "retry_backoff_s": 1.0,
+  "calibration_fraction": 0.3,
+  "seed": 42,
+  "deterministic_mode": false,
+  "task_type": "pair",
+  "alphas": [
+    0.01,
+    0.05,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "task_summaries": {
+    "pair": {
+      "task_type": "pair",
+      "n_total": 1293,
+      "successful_cal_n": 386,
+      "successful_test_n": 907,
+      "failed_cal_n": 0,
+      "failed_test_n": 0,
+      "bias_summary": {
+        "by_original_dataset": {
+          "AesBench": {
+            "n": 68,
+            "accuracy": 0.5735294117647058,
+            "avg_confidence": 0.0006571845641638485
+          },
+          "ChartQA": {
+            "n": 56,
+            "accuracy": 0.39285714285714285,
+            "avg_confidence": 0.0003701893597909513
+          },
+          "Concept Caption": {
+            "n": 69,
+            "accuracy": 0.5362318840579711,
+            "avg_confidence": 6.398870664732893e-05
+          },
+          "ScienceQA": {
+            "n": 72,
+            "accuracy": 0.375,
+            "avg_confidence": 0.013818588473307053
+          },
+          "VisitBench": {
+            "n": 57,
+            "accuracy": 0.49122807017543857,
+            "avg_confidence": 2.8824608830375042e-05
+          },
+          "WIT": {
+            "n": 52,
+            "accuracy": 0.38461538461538464,
+            "avg_confidence": 5.1109407217748665e-05
+          },
+          "coco": {
+            "n": 82,
+            "accuracy": 0.4024390243902439,
+            "avg_confidence": 2.609991559285164e-05
+          },
+          "diffusiondb": {
+            "n": 33,
+            "accuracy": 0.8787878787878788,
+            "avg_confidence": 3.2587500231546476e-06
+          },
+          "infographicsVQA": {
+            "n": 73,
+            "accuracy": 0.4520547945205479,
+            "avg_confidence": 0.014051165499444289
+          },
+          "llava_bench": {
+            "n": 60,
+            "accuracy": 0.4666666666666667,
+            "avg_confidence": 3.252199660803733e-05
+          },
+          "mathvista": {
+            "n": 125,
+            "accuracy": 0.384,
+            "avg_confidence": 0.05846076836698
+          },
+          "mind2web": {
+            "n": 67,
+            "accuracy": 0.6567164179104478,
+            "avg_confidence": 9.62001769809832e-05
+          },
+          "mm-vet": {
+            "n": 36,
+            "accuracy": 0.5,
+            "avg_confidence": 0.000320425711003562
+          },
+          "textVQA": {
+            "n": 57,
+            "accuracy": 0.42105263157894735,
+            "avg_confidence": 0.009882993090382673
+          }
+        },
+        "by_name": {
+          "__missing__": {
+            "n": 907,
+            "accuracy": 0.474090407938258,
+            "avg_confidence": 0.011012034134278193
+          }
+        },
+        "by_predicted_top_name": {
+          "__missing__": {
+            "n": 1,
+            "accuracy": 1.0,
+            "avg_confidence": 0.9999952132987232
+          },
+          "cogvlm": {
+            "n": 189,
+            "accuracy": 0.24338624338624337,
+            "avg_confidence": 0.024946928173918692
+          },
+          "gemini": {
+            "n": 156,
+            "accuracy": 0.3333333333333333,
+            "avg_confidence": 0.006665220461960757
+          },
+          "gpt4": {
+            "n": 301,
+            "accuracy": 0.7774086378737541,
+            "avg_confidence": 0.007440302976233452
+          },
+          "llava": {
+            "n": 209,
+            "accuracy": 0.3062200956937799,
+            "avg_confidence": 0.004739641961995975
+          },
+          "qwen": {
+            "n": 51,
+            "accuracy": 0.6470588235294118,
+            "avg_confidence": 5.999144415019392e-05
+          }
+        },
+        "by_human_top_name": {
+          "__missing__": {
+            "n": 177,
+            "accuracy": 0.005649717514124294,
+            "avg_confidence": 0.031532402075946056
+          },
+          "cogvlm": {
+            "n": 72,
+            "accuracy": 0.6388888888888888,
+            "avg_confidence": 0.010796320756486556
+          },
+          "gemini": {
+            "n": 122,
+            "accuracy": 0.4262295081967213,
+            "avg_confidence": 8.477170161859168e-05
+          },
+          "gpt4": {
+            "n": 363,
+            "accuracy": 0.6446280991735537,
+            "avg_confidence": 0.004449472403144415
+          },
+          "llava": {
+            "n": 121,
+            "accuracy": 0.5289256198347108,
+            "avg_confidence": 0.016512412633853245
+          },
+          "qwen": {
+            "n": 52,
+            "accuracy": 0.6346153846153846,
+            "avg_confidence": 0.0001123488316481672
+          }
+        }
+      },
+      "uq_metrics": {
+        "n": 907,
+        "n_valid_for_class_metrics": 907,
+        "n_unknown_true_labels": 0,
+        "accuracy": 0.474090407938258,
+        "nll": 8.16669638506674,
+        "brier": 1.3988171468563084,
+        "entropy_mean": 0.18501672866633287,
+        "auroc_uncertainty_for_incorrect": 0.5014260640631856,
+        "ece": 0.47743372998482675,
+        "mce": 0.7359744883023933,
+        "risk_coverage": {
+          "coverage": [
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.25,
+            0.3,
+            0.35,
+            0.39999999999999997,
+            0.44999999999999996,
+            0.49999999999999994,
+            0.5499999999999999,
+            0.6,
+            0.65,
+            0.7,
+            0.75,
+            0.7999999999999999,
+            0.85,
+            0.9,
+            0.95,
+            1.0
+          ],
+          "risk": [
+            0.5111111111111111,
+            0.48351648351648346,
+            0.4558823529411765,
+            0.49723756906077343,
+            0.5022026431718062,
+            0.5110294117647058,
+            0.5205047318611987,
+            0.534435261707989,
+            0.5490196078431373,
+            0.5386313465783664,
+            0.531062124248497,
+            0.5349264705882353,
+            0.5338983050847458,
+            0.525984251968504,
+            0.5220588235294117,
+            0.5234159779614325,
+            0.5265888456549935,
+            0.5196078431372548,
+            0.5220417633410672,
+            0.525909592061742
+          ],
+          "sizes": [
+            45,
+            91,
+            136,
+            181,
+            227,
+            272,
+            317,
+            363,
+            408,
+            453,
+            499,
+            544,
+            590,
+            635,
+            680,
+            726,
+            771,
+            816,
+            862,
+            907
+          ]
+        },
+        "paths": {
+          "reliability": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ/gemma4b/20260320_043218/Figures/UQ/20260320_043704/pair/pair_reliability.png",
+          "risk_coverage": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ/gemma4b/20260320_043218/Figures/UQ/20260320_043704/pair/pair_risk_coverage.png"
+        }
+      },
+      "conformal": {
+        "cal_n": 386,
+        "test_n": 907,
+        "alphas": [
+          0.01,
+          0.05,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "nominal_coverages": [
+          0.99,
+          0.95,
+          0.9,
+          0.85,
+          0.8
+        ],
+        "empirical_coverages": [
+          0.9966923925027563,
+          0.9570011025358324,
+          0.9040793825799338,
+          0.8224917309812569,
+          0.7861080485115767
+        ],
+        "avg_set_sizes": [
+          2.990077177508269,
+          2.898566703417861,
+          2.797133406835722,
+          2.631753031973539,
+          2.5667034178610804
+        ],
+        "coverage_by_alpha": {
+          "0.01": 0.9966923925027563,
+          "0.05": 0.9570011025358324,
+          "0.1": 0.9040793825799338,
+          "0.15": 0.8224917309812569,
+          "0.2": 0.7861080485115767
+        },
+        "set_size_by_alpha": {
+          "0.01": 2.990077177508269,
+          "0.05": 2.898566703417861,
+          "0.1": 2.797133406835722,
+          "0.15": 2.631753031973539,
+          "0.2": 2.5667034178610804
+        },
+        "paths": {
+          "coverage_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ/gemma4b/20260320_043218/Figures/UQ/20260320_043704/pair/pair_conformal_coverage.png",
+          "set_size_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ/gemma4b/20260320_043218/Figures/UQ/20260320_043704/pair/pair_conformal_set_size.png"
+        }
+      },
+      "selection": {
+        "cal_n": 386,
+        "test_n": 907,
+        "alphas": [
+          0.01,
+          0.05,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "nominal_coverages": [
+          0.99,
+          0.95,
+          0.9,
+          0.85,
+          0.8
+        ],
+        "empirical_coverages": [
+          0.9955898566703418,
+          0.9470782800441014,
+          0.8941565600882029,
+          0.8610804851157663,
+          0.8103638368246968
+        ],
+        "avg_kept_accuracy": [
+          0.4739756367663344,
+          0.47729918509895225,
+          0.4808877928483354,
+          0.47503201024327785,
+          0.47619047619047616
+        ],
+        "threshold_by_alpha": {
+          "0.01": 3.319622770650017e-10,
+          "0.05": 1.4223335581541652e-08,
+          "0.1": 5.0827992809174883e-08,
+          "0.15": 9.555206040541455e-08,
+          "0.2": 2.0408083559373904e-07
+        },
+        "paths": {
+          "coverage_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ/gemma4b/20260320_043218/Figures/UQ/20260320_043704/pair/pair_selection_coverage.png"
+        }
+      },
+      "paths": {
+        "cal_predictions": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ/gemma4b/20260320_043218/Figures/UQ/20260320_043704/pair/cal_predictions.json",
+        "test_predictions": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ/gemma4b/20260320_043218/Figures/UQ/20260320_043704/pair/test_predictions.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "task_type": "pair",
+  "n_total": 1293,
+  "successful_cal_n": 386,
+  "successful_test_n": 907,
+  "failed_cal_n": 0,
+  "failed_test_n": 0,
+  "bias_summary": {
+    "by_original_dataset": {
+      "AesBench": {
+        "n": 68,
+        "accuracy": 0.5882352941176471,
+        "avg_confidence": 0.0007816861916974098
+      },
+      "ChartQA": {
+        "n": 56,
+        "accuracy": 0.39285714285714285,
+        "avg_confidence": 0.00018665898731095356
+      },
+      "Concept Caption": {
+        "n": 69,
+        "accuracy": 0.5652173913043478,
+        "avg_confidence": 0.00012729495406137585
+      },
+      "ScienceQA": {
+        "n": 72,
+        "accuracy": 0.4027777777777778,
+        "avg_confidence": 0.01352535835219296
+      },
+      "VisitBench": {
+        "n": 57,
+        "accuracy": 0.49122807017543857,
+        "avg_confidence": 3.2503566133127876e-05
+      },
+      "WIT": {
+        "n": 52,
+        "accuracy": 0.40384615384615385,
+        "avg_confidence": 5.626205354760586e-05
+      },
+      "coco": {
+        "n": 82,
+        "accuracy": 0.3902439024390244,
+        "avg_confidence": 2.1971750038515037e-05
+      },
+      "diffusiondb": {
+        "n": 33,
+        "accuracy": 0.8787878787878788,
+        "avg_confidence": 5.590795157584784e-06
+      },
+      "infographicsVQA": {
+        "n": 73,
+        "accuracy": 0.4794520547945205,
+        "avg_confidence": 0.0003180762317428568
+      },
+      "llava_bench": {
+        "n": 60,
+        "accuracy": 0.48333333333333334,
+        "avg_confidence": 2.6395745961110906e-05
+      },
+      "mathvista": {
+        "n": 125,
+        "accuracy": 0.352,
+        "avg_confidence": 0.07463036360835519
+      },
+      "mind2web": {
+        "n": 67,
+        "accuracy": 0.6716417910447762,
+        "avg_confidence": 7.618579711574848e-05
+      },
+      "mm-vet": {
+        "n": 36,
+        "accuracy": 0.5,
+        "avg_confidence": 7.87941254034707e-05
+      },
+      "textVQA": {
+        "n": 57,
+        "accuracy": 0.38596491228070173,
+        "avg_confidence": 0.030255362033853844
+      }
+    },
+    "by_name": {
+      "__missing__": {
+        "n": 907,
+        "accuracy": 0.47739801543550164,
+        "avg_confidence": 0.013383766991048106
+      }
+    },
+    "by_predicted_top_name": {
+      "__missing__": {
+        "n": 2,
+        "accuracy": 0.5,
+        "avg_confidence": 0.249946181350381
+      },
+      "cogvlm": {
+        "n": 191,
+        "accuracy": 0.24083769633507854,
+        "avg_confidence": 0.0351046215254304
+      },
+      "gemini": {
+        "n": 161,
+        "accuracy": 0.34782608695652173,
+        "avg_confidence": 0.012376222890494558
+      },
+      "gpt4": {
+        "n": 301,
+        "accuracy": 0.7840531561461794,
+        "avg_confidence": 0.009671000251019156
+      },
+      "llava": {
+        "n": 208,
+        "accuracy": 0.3125,
+        "avg_confidence": 0.00013635500960550634
+      },
+      "qwen": {
+        "n": 44,
+        "accuracy": 0.6590909090909091,
+        "avg_confidence": 5.2199634052904506e-05
+      }
+    },
+    "by_human_top_name": {
+      "__missing__": {
+        "n": 177,
+        "accuracy": 0.005649717514124294,
+        "avg_confidence": 0.024960406516492586
+      },
+      "cogvlm": {
+        "n": 72,
+        "accuracy": 0.6388888888888888,
+        "avg_confidence": 0.026936002758813495
+      },
+      "gemini": {
+        "n": 122,
+        "accuracy": 0.45901639344262296,
+        "avg_confidence": 6.636241352467614e-05
+      },
+      "gpt4": {
+        "n": 363,
+        "accuracy": 0.650137741046832,
+        "avg_confidence": 0.007572235643470278
+      },
+      "llava": {
+        "n": 121,
+        "accuracy": 0.5371900826446281,
+        "avg_confidence": 0.02494775796530254
+      },
+      "qwen": {
+        "n": 52,
+        "accuracy": 0.5576923076923077,
+        "avg_confidence": 0.0001191546537604501
+      }
+    }
+  },
+  "uq_metrics": {
+    "n": 907,
+    "n_valid_for_class_metrics": 907,
+    "n_unknown_true_labels": 0,
+    "accuracy": 0.47739801543550164,
+    "nll": 7.83881147560024,
+    "brier": 1.3703535799065532,
+    "entropy_mean": 0.19303091263825797,
+    "auroc_uncertainty_for_incorrect": 0.5179714678282222,
+    "ece": 0.48497509585667287,
+    "mce": 0.8175177919084705,
+    "risk_coverage": {
+      "coverage": [
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35,
+        0.39999999999999997,
+        0.44999999999999996,
+        0.49999999999999994,
+        0.5499999999999999,
+        0.6,
+        0.65,
+        0.7,
+        0.75,
+        0.7999999999999999,
+        0.85,
+        0.9,
+        0.95,
+        1.0
+      ],
+      "risk": [
+        0.5777777777777777,
+        0.4725274725274725,
+        0.4191176470588235,
+        0.39226519337016574,
+        0.46696035242290745,
+        0.5,
+        0.49526813880126186,
+        0.5013774104683195,
+        0.5098039215686274,
+        0.5033112582781457,
+        0.503006012024048,
+        0.5055147058823529,
+        0.5067796610169492,
+        0.5055118110236221,
+        0.5029411764705882,
+        0.5068870523415978,
+        0.5123216601815823,
+        0.5134803921568627,
+        0.5139211136890951,
+        0.5226019845644984
+      ],
+      "sizes": [
+        45,
+        91,
+        136,
+        181,
+        227,
+        272,
+        317,
+        363,
+        408,
+        453,
+        499,
+        544,
+        590,
+        635,
+        680,
+        726,
+        771,
+        816,
+        862,
+        907
+      ]
+    },
+    "paths": {
+      "reliability": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ//slurm_52762797_20260320_051020_google_gemma-3-4b-it/Figures/UQ/20260320_052324/pair/pair_reliability.png",
+      "risk_coverage": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ//slurm_52762797_20260320_051020_google_gemma-3-4b-it/Figures/UQ/20260320_052324/pair/pair_risk_coverage.png"
+    }
+  },
+  "conformal": {
+    "cal_n": 386,
+    "test_n": 907,
+    "alphas": [
+      0.01,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "nominal_coverages": [
+      0.99,
+      0.95,
+      0.9,
+      0.85,
+      0.8
+    ],
+    "empirical_coverages": [
+      0.9966923925027563,
+      0.9470782800441014,
+      0.8996692392502756,
+      0.836824696802646,
+      0.8004410143329658
+    ],
+    "avg_set_sizes": [
+      2.9867695700110253,
+      2.874310915104741,
+      2.7651598676957003,
+      2.6163175303197352,
+      2.5347298787210586
+    ],
+    "coverage_by_alpha": {
+      "0.01": 0.9966923925027563,
+      "0.05": 0.9470782800441014,
+      "0.1": 0.8996692392502756,
+      "0.15": 0.836824696802646,
+      "0.2": 0.8004410143329658
+    },
+    "set_size_by_alpha": {
+      "0.01": 2.9867695700110253,
+      "0.05": 2.874310915104741,
+      "0.1": 2.7651598676957003,
+      "0.15": 2.6163175303197352,
+      "0.2": 2.5347298787210586
+    },
+    "paths": {
+      "coverage_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ//slurm_52762797_20260320_051020_google_gemma-3-4b-it/Figures/UQ/20260320_052324/pair/pair_conformal_coverage.png",
+      "set_size_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ//slurm_52762797_20260320_051020_google_gemma-3-4b-it/Figures/UQ/20260320_052324/pair/pair_conformal_set_size.png"
+    }
+  },
+  "selection": {
+    "cal_n": 386,
+    "test_n": 907,
+    "alphas": [
+      0.01,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "nominal_coverages": [
+      0.99,
+      0.95,
+      0.9,
+      0.85,
+      0.8
+    ],
+    "empirical_coverages": [
+      0.9933847850055126,
+      0.9514884233737596,
+      0.8908489525909592,
+      0.8500551267916208,
+      0.8191841234840133
+    ],
+    "avg_kept_accuracy": [
+      0.48057713651498335,
+      0.48667439165701043,
+      0.4839108910891089,
+      0.4876783398184176,
+      0.49125168236877526
+    ],
+    "threshold_by_alpha": {
+      "0.01": 7.689076125039904e-10,
+      "0.05": 1.7068216930603816e-08,
+      "0.1": 6.216005142596175e-08,
+      "0.15": 9.925695003390507e-08,
+      "0.2": 1.637378347203054e-07
+    },
+    "paths": {
+      "coverage_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ//slurm_52762797_20260320_051020_google_gemma-3-4b-it/Figures/UQ/20260320_052324/pair/pair_selection_coverage.png"
+    }
+  },
+  "paths": {
+    "cal_predictions": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ//slurm_52762797_20260320_051020_google_gemma-3-4b-it/Figures/UQ/20260320_052324/pair/cal_predictions.json",
+    "test_predictions": "/gscratch/tkishore/MLLM-Judge/Experiments/logs/UQ//slurm_52762797_20260320_051020_google_gemma-3-4b-it/Figures/UQ/20260320_052324/pair/test_predictions.json"
+  }
+}

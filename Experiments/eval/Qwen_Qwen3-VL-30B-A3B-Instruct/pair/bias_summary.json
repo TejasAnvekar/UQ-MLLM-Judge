@@ -1,0 +1,145 @@
+{
+  "by_original_dataset": {
+    "AesBench": {
+      "n": 64,
+      "accuracy": 0.65625,
+      "avg_confidence": 0.5209201142507707
+    },
+    "ChartQA": {
+      "n": 56,
+      "accuracy": 0.35714285714285715,
+      "avg_confidence": 0.7461215531654103
+    },
+    "Concept Caption": {
+      "n": 68,
+      "accuracy": 0.6176470588235294,
+      "avg_confidence": 0.6055882686449054
+    },
+    "ScienceQA": {
+      "n": 72,
+      "accuracy": 0.375,
+      "avg_confidence": 0.691430403236553
+    },
+    "VisitBench": {
+      "n": 54,
+      "accuracy": 0.6481481481481481,
+      "avg_confidence": 0.4794335410917152
+    },
+    "WIT": {
+      "n": 48,
+      "accuracy": 0.5208333333333334,
+      "avg_confidence": 0.5956424468943279
+    },
+    "coco": {
+      "n": 82,
+      "accuracy": 0.524390243902439,
+      "avg_confidence": 0.6563550673343583
+    },
+    "diffusiondb": {
+      "n": 33,
+      "accuracy": 0.696969696969697,
+      "avg_confidence": 0.6543536741534144
+    },
+    "infographicsVQA": {
+      "n": 66,
+      "accuracy": 0.6363636363636364,
+      "avg_confidence": 0.5469522283520112
+    },
+    "llava_bench": {
+      "n": 60,
+      "accuracy": 0.5,
+      "avg_confidence": 0.574980145509553
+    },
+    "mathvista": {
+      "n": 125,
+      "accuracy": 0.504,
+      "avg_confidence": 0.6773856054770779
+    },
+    "mind2web": {
+      "n": 49,
+      "accuracy": 0.5102040816326531,
+      "avg_confidence": 0.7461860534621337
+    },
+    "mm-vet": {
+      "n": 35,
+      "accuracy": 0.5142857142857142,
+      "avg_confidence": 0.6383805300302036
+    },
+    "textVQA": {
+      "n": 57,
+      "accuracy": 0.5263157894736842,
+      "avg_confidence": 0.6428998238713559
+    }
+  },
+  "by_name": {
+    "__missing__": {
+      "n": 869,
+      "accuracy": 0.5350978135788262,
+      "avg_confidence": 0.6292316486149225
+    }
+  },
+  "by_predicted_top_name": {
+    "__missing__": {
+      "n": 48,
+      "accuracy": 0.3541666666666667,
+      "avg_confidence": 0.6756489144462955
+    },
+    "cogvlm": {
+      "n": 112,
+      "accuracy": 0.35714285714285715,
+      "avg_confidence": 0.6911498624712031
+    },
+    "gemini": {
+      "n": 219,
+      "accuracy": 0.3378995433789954,
+      "avg_confidence": 0.6450052611162174
+    },
+    "gpt4": {
+      "n": 309,
+      "accuracy": 0.8381877022653722,
+      "avg_confidence": 0.5904650592856708
+    },
+    "llava": {
+      "n": 129,
+      "accuracy": 0.3643410852713178,
+      "avg_confidence": 0.6611200541659643
+    },
+    "qwen": {
+      "n": 52,
+      "accuracy": 0.5384615384615384,
+      "avg_confidence": 0.5378466858661068
+    }
+  },
+  "by_human_top_name": {
+    "__missing__": {
+      "n": 176,
+      "accuracy": 0.09659090909090909,
+      "avg_confidence": 0.6641332472265291
+    },
+    "cogvlm": {
+      "n": 72,
+      "accuracy": 0.5555555555555556,
+      "avg_confidence": 0.7024495039787615
+    },
+    "gemini": {
+      "n": 118,
+      "accuracy": 0.6271186440677966,
+      "avg_confidence": 0.6229823528089001
+    },
+    "gpt4": {
+      "n": 344,
+      "accuracy": 0.752906976744186,
+      "avg_confidence": 0.596768150565181
+    },
+    "llava": {
+      "n": 114,
+      "accuracy": 0.41228070175438597,
+      "avg_confidence": 0.6656508443988484
+    },
+    "qwen": {
+      "n": 45,
+      "accuracy": 0.6222222222222222,
+      "avg_confidence": 0.5478695369041472
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "task_type": "batch",
+  "cal_n": 439,
+  "test_n": 1030,
+  "uq_metrics": {
+    "n": 1030,
+    "exact_accuracy": 0.22330097087378642,
+    "pairwise_agreement_mean": 0.6530744336569579,
+    "kendall_tau_like_mean": 0.35566343042071197,
+    "sequence_logprob_mean": -0.1533855328675051,
+    "sequence_confidence_mean": 0.6798402617592161,
+    "auroc_uncertainty_for_incorrect": 0.6424755434782609,
+    "ece": 0.45721016235693024,
+    "mce": 0.7263739352323745,
+    "risk_coverage": {
+      "coverage": [
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35,
+        0.39999999999999997,
+        0.44999999999999996,
+        0.49999999999999994,
+        0.5499999999999999,
+        0.6,
+        0.65,
+        0.7,
+        0.75,
+        0.7999999999999999,
+        0.85,
+        0.9,
+        0.95,
+        1.0
+      ],
+      "risk": [
+        0.6923076923076923,
+        0.6407766990291262,
+        0.6233766233766234,
+        0.6067961165048543,
+        0.6124031007751938,
+        0.6375404530744336,
+        0.6555555555555556,
+        0.6699029126213591,
+        0.6846652267818574,
+        0.7067961165048544,
+        0.7190812720848057,
+        0.7297734627831716,
+        0.744776119402985,
+        0.7461858529819695,
+        0.7551813471502591,
+        0.7597087378640777,
+        0.7614155251141552,
+        0.7680690399137001,
+        0.7648261758691206,
+        0.7766990291262136
+      ],
+      "sizes": [
+        52,
+        103,
+        154,
+        206,
+        258,
+        309,
+        360,
+        412,
+        463,
+        515,
+        566,
+        618,
+        670,
+        721,
+        772,
+        824,
+        876,
+        927,
+        978,
+        1030
+      ]
+    },
+    "paths": {
+      "reliability": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/Qwen_Qwen3-VL-8B-Instruct/batch/batch_reliability.png",
+      "risk_coverage": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/Qwen_Qwen3-VL-8B-Instruct/batch/batch_risk_coverage.png"
+    }
+  },
+  "conformal": null,
+  "selection": {
+    "cal_n": 439,
+    "test_n": 1030,
+    "alphas": [
+      0.01,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "nominal_coverages": [
+      0.99,
+      0.95,
+      0.9,
+      0.85,
+      0.8
+    ],
+    "empirical_coverages": [
+      1.0,
+      1.0,
+      0.9504854368932039,
+      0.9504854368932039,
+      0.9504854368932039
+    ],
+    "avg_kept_accuracy": [
+      0.22330097087378642,
+      0.22330097087378642,
+      0.23493360572012256,
+      0.23493360572012256,
+      0.23493360572012256
+    ],
+    "threshold_by_alpha": {
+      "0.01": 0.0,
+      "0.05": 0.0,
+      "0.1": 0.25,
+      "0.15": 0.25,
+      "0.2": 0.25
+    },
+    "paths": {
+      "coverage_plot": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/Qwen_Qwen3-VL-8B-Instruct/batch/batch_selection_coverage.png"
+    }
+  },
+  "paths": {
+    "bias_summary": "/gscratch/tkishore/MLLM-Judge/Experiments/eval/Qwen_Qwen3-VL-8B-Instruct/batch/bias_summary.json"
+  }
+}
